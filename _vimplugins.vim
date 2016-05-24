@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
+" Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
@@ -26,9 +26,14 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 Plugin 'ascenator/L9', {'name': 'newL9'}
+"Relative und absolute Zeilenanzeige.
 Plugin 'https://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
 "Verbessertes Springen an bestimmte Position:
 Plugin 'https://github.com/easymotion/vim-easymotion.git'
+"Baumansicht der Klassenstruktur:
+Plugin 'https://github.com/majutsushi/tagbar.git'
+"Vim-Powerline (Statusleiste Unten)
+Plugin 'https://github.com/Lokaltog/vim-powerline.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
