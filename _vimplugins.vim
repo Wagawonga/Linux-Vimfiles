@@ -34,6 +34,8 @@ Plugin 'https://github.com/easymotion/vim-easymotion.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 "Vim-Powerline (Statusleiste Unten)
 Plugin 'https://github.com/Lokaltog/vim-powerline.git'
+"CntlP Fuzzy Search
+Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

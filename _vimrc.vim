@@ -3,19 +3,18 @@ set relativenumber
 set number
 
 "Neuer Tagbar Type:
+"Alles Probiert... aber es ist nicht möglich die Scopes ordentlich anzugeben
+"und daher wird hier Tagbar nur als einfache Klassenliste genutzt.
 let g:tagbar_type_delphi = {
-      \ 'ctagstype' : 'delphi',
-      \ 'kinds'     : [
-      \ 't:Type',
+    \ 'ctagstype' : 'delphi',
+    \ 'kinds'     : [
       \ 'c:Class',
-      \ 'n:Constructor',
-      \ 'd:Destructor',
-      \ 'm:Method',
-      \ 'f:Function',
-      \ 'p:Procedure',
-      \ 's:Section',
-      \ ],
-      \ }
+      \ 's:Section'
+    \ ],
+    \ 'sort'    : 0
+\ }
+    "\ 'kind2scope' : {
+    "\ },
 
 compiler dcc32
 
@@ -116,3 +115,14 @@ endif
 "Tagbar auf der linkes seite:
 let g:tagbar_left = 1
 
+"Index Limit für CtrlP
+let g:ctrlp_max_files = 10000
+"Auch in Buffern un mru suchen:
+let g:ctrlp_cmd = 'CtrlPMixed'
+
+"Buffer werden versteckt bei
+set hidden
+
+"Path erweiterung für find:
+set path+=~\dotfiles\**
+set path+=~\*
