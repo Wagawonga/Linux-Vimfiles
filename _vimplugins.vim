@@ -10,31 +10,54 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" More options on surroundings
+Plugin 'tpope/vim-surround'
+
+" dot Repeat for some Plugins
+Plugin 'tpope/vim-repeat'
+
+" Tabellenartige anordungen für Einträge
+Plugin 'godlygeek/tabular'
+
+" Show git difft at side
+Plugin 'airblade/vim-gitgutter'
+
+" Einfacher Kommentieren
+Plugin 'scrooloose/nerdcommenter'
+
+" Syntaxfehler Highlighter
+" Plugin 'scrooloose/syntastic'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-Plugin 'ascenator/L9', {'name': 'newL9'}
-"Relative und absolute Zeilenanzeige.
+
+" Relative und absolute Zeilenanzeige.
 Plugin 'https://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
-"Verbessertes Springen an bestimmte Position:
+
+" Verbessertes Springen an bestimmte Position:
 Plugin 'https://github.com/easymotion/vim-easymotion.git'
-"Baumansicht der Klassenstruktur:
+
+" Baumansicht der Klassenstruktur:
 Plugin 'https://github.com/majutsushi/tagbar.git'
-"Vim-Powerline (Statusleiste Unten)
+
+" Vim-Powerline (Statusleiste Unten)
 Plugin 'https://github.com/Lokaltog/vim-powerline.git'
-"CntlP Fuzzy Search
+
+" Tab Completion für Python
+"Plugin 'https://github.com/davidhalter/jedi-vim'
+
+" Table mode für Vim
+Plugin 'https://github.com/dhruvasagar/vim-table-mode' 
+
+" Schoeneres C++ Highliting
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
+" Colorsheme
+Plugin 'https://github.com/altercation/vim-colors-solarized.git'
+
+" CntlP Fuzzy Search
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
 " All of your Plugins must be added before the following line

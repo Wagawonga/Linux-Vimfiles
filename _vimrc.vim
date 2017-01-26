@@ -1,30 +1,4 @@
-"hybrid Number Plugin activate:
-set relativenumber
-set number
-
-"Neuer Tagbar Type:
-"Alles Probiert... aber es ist nicht möglich die Scopes ordentlich anzugeben
-"und daher wird hier Tagbar nur als einfache Klassenliste genutzt.
-let g:tagbar_type_delphi = {
-    \ 'ctagstype' : 'delphi',
-    \ 'kinds'     : [
-      \ 'c:Class',
-      \ 's:Section'
-    \ ],
-    \ 'sort'    : 0
-\ }
-    "\ 'kind2scope' : {
-    "\ },
-
-compiler dcc32
-
-syntax enable
-
-"Damit das Windows Clipboard genutzt wird:
-set clipboard=unnamed
-
-colorscheme sahara
-set background=dark
+﻿syntax enable
 
 "My preferences
 set shiftwidth=4
@@ -33,6 +7,7 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set backspace=indent,eol,start
+set clipboard=unnamed
 
 set nowritebackup
 set nobackup
@@ -45,10 +20,6 @@ set laststatus=2
 set encoding=utf-8
 "Set to whatever font you like.
 set guifont=Inconsolata\ for\ Powerline:h12
-
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
 
 "für Tagbar muss die Filetype detecton an sein:
 filetype on
@@ -126,3 +97,23 @@ set hidden
 "Path erweiterung für find:
 set path+=~\dotfiles\**
 set path+=~\*
+
+"hervorheben von Suchergebnissen:
+set hlsearch
+"Farbe von Suchergebnissen Rot für bessere Sichtbarkeit:
+hi Search guibg=Red
+
+"Anzeigen des Suchmatches während der Eingabe
+set incsearch
+
+"Fuer Arduino Files
+autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
+
+"hybrid Number Plugin activate:
+set relativenumber
+set number
+
+colorscheme sahara 
+set background=dark
+highlight Normal guibg=black
+
