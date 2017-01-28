@@ -4,7 +4,7 @@ Plugin 'tpope/vim-surround'
 " dot Repeat for some Plugins
 Plugin 'tpope/vim-repeat'
 
-" Tabellenartige anordungen für Einträge
+" Tabellenartige Anordnung für Einträge
 Plugin 'godlygeek/tabular'
 
 " Show git diff at side
