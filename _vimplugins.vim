@@ -7,7 +7,7 @@ Plugin 'tpope/vim-repeat'
 " Tabellenartige anordungen für Einträge
 Plugin 'godlygeek/tabular'
 
-" Show git difft at side
+" Show git diff at side
 Plugin 'airblade/vim-gitgutter'
 
 " Einfacher Kommentieren
@@ -16,9 +16,7 @@ Plugin 'scrooloose/nerdcommenter'
 " Syntaxfehler Highlighter
 " Plugin 'scrooloose/syntastic'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
+" Git wrapper fuer vim. 
 Plugin 'tpope/vim-fugitive'
 
 " Relative und absolute Zeilenanzeige.
@@ -47,4 +45,3 @@ Plugin 'https://github.com/altercation/vim-colors-solarized.git'
 
 " CntlP Fuzzy Search
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
-
