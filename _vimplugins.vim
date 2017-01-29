@@ -45,3 +45,12 @@ Plugin 'https://github.com/altercation/vim-colors-solarized.git'
 
 " CntlP Fuzzy Search
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
+
+" Schoenere Anzeige von eingerueckten Bloecken
+Plugin 'nathanaelkane/vim-indent-guides'
+
+" Fuer mehr colorshemes
+Plugin 'flazz/vim-colorschemes'
+
+" Tab-vervollstaendigung
+Plugin 'ervandew/supertab'
