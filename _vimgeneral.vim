@@ -115,7 +115,6 @@ set number
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-colorscheme sahara 
 set background=dark
 highlight Normal guibg=black
 
