@@ -90,6 +90,12 @@ let g:tagbar_left = 1
 let g:ctrlp_max_files = 10000
 "Auch in Buffern un mru suchen:
 let g:ctrlp_cmd = 'CtrlPMixed'
+"Caching angeschaltet aber nicht automatisch updated.
+"Mit F5 kann händisch gecascht werden:
+"Dafür wird der cache der letzten session beibehalten:
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 0
+
 
 "Buffer werden versteckt bei
 set hidden

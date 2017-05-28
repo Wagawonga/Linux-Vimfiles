@@ -53,4 +53,13 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'flazz/vim-colorschemes'
 
 " Tab-vervollstaendigung
-Plugin 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
+
+"bessere Tab-Vervollstaendigung:
+"Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+
+" yankstack:
+Plugin 'https://github.com/maxbrunsfeld/vim-yankstack.git'
+
+"Register anzeigen bei " und @
+Plugin 'https://github.com/junegunn/vim-peekaboo.git'
