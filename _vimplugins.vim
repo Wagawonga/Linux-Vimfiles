@@ -25,7 +25,7 @@ Plugin 'https://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
 " Verbessertes Springen an bestimmte Position:
 Plugin 'https://github.com/easymotion/vim-easymotion.git'
 
-" Baumansicht der Klassenstruktur:
+" Baumansicht der Klassenstruktur: (Brauch ctags)
 Plugin 'https://github.com/majutsushi/tagbar.git'
 
 " Vim-Powerline (Statusleiste Unten)
@@ -54,3 +54,21 @@ Plugin 'flazz/vim-colorschemes'
 
 " Tab-vervollstaendigung
 Plugin 'ervandew/supertab'
+
+" neues Text Object Line
+Plugin 'bruno-/vim-line'
+
+" Schöneres Javascript
+Plugin 'jelera/vim-javascript-syntax'
+
+" Autovervollständigung
+"Plugin 'Valloric/YouCompleteMe'
+
+" Syntaxcheck
+Plugin 'https://github.com/vim-syntastic/syntastic.git'
+
+" für bessere Syntaxchecks für Javascript
+" Plugin 'https://github.com/ternjs/tern_for_vim.git'
+
+" Und wieder ein neues Colorsheme:
+Plugin 'carakan/new-railscasts-theme'

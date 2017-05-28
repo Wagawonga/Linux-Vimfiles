@@ -7,7 +7,7 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set backspace=indent,eol,start
-set clipboard=unnamed
+"set clipboard=unnamed
 
 set nowritebackup
 set nobackup
@@ -15,6 +15,7 @@ set noswapfile
 
 syntax enable
 set laststatus=2
+
 
 "Strictly necessary for Powerline
 set encoding=utf-8
@@ -88,8 +89,10 @@ let g:tagbar_left = 1
 
 "Index Limit für CtrlP
 let g:ctrlp_max_files = 10000
-"Auch in Buffern un mru suchen:
+"Auch in Buffern und mru suchen:
 let g:ctrlp_cmd = 'CtrlPMixed'
+"Cache beibehalten (mit <F5> refresh)
+let g:ctrlp_clear_cache_on_exit = 0
 
 "Buffer werden versteckt bei
 set hidden
@@ -115,7 +118,22 @@ set number
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-colorscheme sahara 
+colorscheme onedark 
 set background=dark
 highlight Normal guibg=black
 
+"Schöneres Javascript:
+set guifont=DejaVu_Sans_Mono:h8:cANSI:qDRAFT
+
+" Syntastic setup
+let g:syntastic_javascript_checkers = ['jshint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+set makeprg=gcc\ -o\ %<\ %
