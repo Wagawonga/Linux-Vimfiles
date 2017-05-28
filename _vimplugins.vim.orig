@@ -53,22 +53,17 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'flazz/vim-colorschemes'
 
 " Tab-vervollstaendigung
-"Plugin 'ervandew/supertab'
+<<<<<<< HEAD
+Plugin 'ervandew/supertab'
 
 " neues Text Object Line
 Plugin 'bruno-/vim-line'
 
-"bessere Tab-Vervollstaendigung:
-"Plugin 'https://github.com/Valloric/YouCompleteMe.git'
-
 " Schöneres Javascript
 Plugin 'jelera/vim-javascript-syntax'
 
-" yankstack:
-Plugin 'https://github.com/maxbrunsfeld/vim-yankstack.git'
-
-"Register anzeigen bei " und @
-Plugin 'https://github.com/junegunn/vim-peekaboo.git'
+" Autovervollständigung
+"Plugin 'Valloric/YouCompleteMe'
 
 " Syntaxcheck
 Plugin 'https://github.com/vim-syntastic/syntastic.git'
@@ -78,3 +73,15 @@ Plugin 'https://github.com/vim-syntastic/syntastic.git'
 
 " Und wieder ein neues Colorsheme:
 Plugin 'carakan/new-railscasts-theme'
+=======
+"Plugin 'ervandew/supertab'
+
+"bessere Tab-Vervollstaendigung:
+"Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+
+" yankstack:
+Plugin 'https://github.com/maxbrunsfeld/vim-yankstack.git'
+
+"Register anzeigen bei " und @
+Plugin 'https://github.com/junegunn/vim-peekaboo.git'
+>>>>>>> origin/master
