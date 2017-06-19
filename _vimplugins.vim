@@ -78,3 +78,6 @@ Plugin 'https://github.com/vim-syntastic/syntastic.git'
 
 " Und wieder ein neues Colorsheme:
 Plugin 'carakan/new-railscasts-theme'
+
+" Fuer die Anzeige von CSV-Dateien:
+Plugin 'https://github.com/chrisbra/csv.vim.git'
