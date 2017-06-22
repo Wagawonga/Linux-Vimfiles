@@ -81,3 +81,7 @@ Plugin 'carakan/new-railscasts-theme'
 
 " Fuer die Anzeige von CSV-Dateien:
 Plugin 'https://github.com/chrisbra/csv.vim.git'
+
+" Hier Delphi Syntaxhighlight : 
+Plugin 'https://github.com/vim-scripts/Delphi-7-2010.git'
+
