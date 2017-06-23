@@ -12,8 +12,13 @@ endif
 
 "Linux
 if has('unix')
-	set rtp+=~/.vim/bundle/Vundle.vim
-	call vundle#begin()
+    if isdirectory($HOME . '/.vim/bundle/')
+        set rtp+=~/.vim/bundle/Vundle.vim
+        call vundle#begin()
+    elseif isdirectory($HOME . '/vimfiles/bundle')
+        set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+        call vundle#begin('$HOME/vimfiles/bundle/')
+    endif
 endif
 
     " alternatively, pass a path where Vundle should install plugins

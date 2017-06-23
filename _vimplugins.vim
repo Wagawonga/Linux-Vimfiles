@@ -81,3 +81,6 @@ Plugin 'carakan/new-railscasts-theme'
 
 " Fuer die Anzeige von CSV-Dateien:
 Plugin 'https://github.com/chrisbra/csv.vim.git'
+
+" für Markdown Syntax:
+Plugin 'https://github.com/plasticboy/vim-markdown.git'
