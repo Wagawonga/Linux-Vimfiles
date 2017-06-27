@@ -53,17 +53,22 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'flazz/vim-colorschemes'
 
 " Tab-vervollstaendigung
-<<<<<<< HEAD
-Plugin 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
 
 " neues Text Object Line
 Plugin 'bruno-/vim-line'
 
+"bessere Tab-Vervollstaendigung:
+"Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+
 " Schöneres Javascript
 Plugin 'jelera/vim-javascript-syntax'
 
-" Autovervollständigung
-"Plugin 'Valloric/YouCompleteMe'
+" yankstack:
+Plugin 'https://github.com/maxbrunsfeld/vim-yankstack.git'
+
+"Register anzeigen bei " und @
+Plugin 'https://github.com/junegunn/vim-peekaboo.git'
 
 " Syntaxcheck
 Plugin 'https://github.com/vim-syntastic/syntastic.git'
@@ -73,15 +78,15 @@ Plugin 'https://github.com/vim-syntastic/syntastic.git'
 
 " Und wieder ein neues Colorsheme:
 Plugin 'carakan/new-railscasts-theme'
+
+" Fuer die Anzeige von CSV-Dateien:
+Plugin 'https://github.com/chrisbra/csv.vim.git'
+
+<<<<<<< HEAD
+" für Markdown Syntax:
+Plugin 'https://github.com/plasticboy/vim-markdown.git'
 =======
-"Plugin 'ervandew/supertab'
+" Hier Delphi Syntaxhighlight : 
+Plugin 'https://github.com/vim-scripts/Delphi-7-2010.git'
 
-"bessere Tab-Vervollstaendigung:
-"Plugin 'https://github.com/Valloric/YouCompleteMe.git'
-
-" yankstack:
-Plugin 'https://github.com/maxbrunsfeld/vim-yankstack.git'
-
-"Register anzeigen bei " und @
-Plugin 'https://github.com/junegunn/vim-peekaboo.git'
->>>>>>> origin/master
+>>>>>>> 8a0ad3794fdfb8f78cb9390669ba0469ae21f6cf
