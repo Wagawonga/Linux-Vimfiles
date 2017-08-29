@@ -2,7 +2,10 @@
 "-----------------KEY REMAPS---------------------------
 "------------------------------------------------------
 
-let mapleader=","
+"Leader auf space gesetzt.
+nmap <space> <Leader>
+"Fuer Easymotion
+nmap <space><space> <Leader><Leader>
 
 "Remap: damit linkt in der Hilfe benutzt werden können:
 nmap <Leader>r <C-]>
