@@ -141,3 +141,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 set makeprg=gcc\ -o\ %<\ %
+
+"Autmoatisches Anpassen von CMV's
+let g:csv_autocmd_arrange = 1
