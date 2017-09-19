@@ -144,3 +144,6 @@ set makeprg=gcc\ -o\ %<\ %
 
 "Autmoatisches Anpassen von CMV's
 let g:csv_autocmd_arrange = 1
+
+" ; als Trennung fuer CSV
+let g:csv_delim=';'
