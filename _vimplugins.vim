@@ -13,9 +13,6 @@ Plugin 'airblade/vim-gitgutter'
 " Einfacher Kommentieren
 Plugin 'scrooloose/nerdcommenter'
 
-" Syntaxfehler Highlighter
-" Plugin 'scrooloose/syntastic'
-
 " Git wrapper fuer vim. 
 Plugin 'tpope/vim-fugitive'
 
@@ -71,7 +68,7 @@ Plugin 'https://github.com/maxbrunsfeld/vim-yankstack.git'
 Plugin 'https://github.com/junegunn/vim-peekaboo.git'
 
 " Syntaxcheck
-Plugin 'https://github.com/vim-syntastic/syntastic.git'
+" Plugin 'https://github.com/vim-syntastic/syntastic.git'
 
 " für bessere Syntaxchecks für Javascript
 " Plugin 'https://github.com/ternjs/tern_for_vim.git'

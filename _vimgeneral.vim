@@ -147,3 +147,5 @@ set makeprg=gcc\ -o\ %<\ %
 
 " ; als Trennung fuer CSV
 let g:csv_delim=';'
+
+set clipboard=unnamed
