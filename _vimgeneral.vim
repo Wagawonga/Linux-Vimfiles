@@ -153,3 +153,4 @@ set makeprg=gcc\ -o\ %<\ %
 let g:csv_delim=';'
 
 set clipboard=unnamed
+set nofoldenable " Disable Folding when openening a file. Toggle with normalmode command zi
