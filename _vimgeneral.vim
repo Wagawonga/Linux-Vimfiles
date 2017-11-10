@@ -122,12 +122,12 @@ set number
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-if !match($TERM,"screen")
-    colorscheme 0x7A69_dark
-else
+if !match($TERM,"xterm")
     colorscheme onedark 
     set background=dark
     highlight Normal guibg=black
+else
+    colorscheme 0x7A69_dark
 endif
 
 "Schöneres Javascript:
