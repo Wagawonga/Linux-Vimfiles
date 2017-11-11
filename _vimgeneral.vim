@@ -125,15 +125,19 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 "Default
 colorscheme 0x7A69_dark
 "Wenn mehr Farben unterstützt werden:
-if !match($TERM,"xterm") 
-\  || ( has("gui_running") && has("win32") )
-"  || !match($TERM,"cygwin") 
+"gVim
+if ( has("gui_running") && has("win32") )
     colorscheme onedark 
     highlight Normal guibg=black
-    highlight Normal ctermbg=black
+endif
+"MINGSW64 & xWindows & Term
+if !match($TERM,"xterm") 
+"    colorscheme onedark 
+    "highlight Normal guibg=black
+    "highlight Normal ctermbg=black
 endif
 
-"Schöneres Javascript:
+"Schoeneres Javascript:
 set guifont=DejaVu_Sans_Mono:h8:cANSI:qDRAFT
 
 " Syntastic setup
