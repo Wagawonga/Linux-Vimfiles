@@ -122,7 +122,7 @@ set number
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-if !match($TERM,"xterm")
+if !match($TERM,"xterm") || ( has("gui_running") && has("win32") )
     colorscheme onedark 
     set background=dark
     highlight Normal guibg=black
