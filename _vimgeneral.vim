@@ -130,11 +130,10 @@ if ( has("gui_running") && has("win32") )
     colorscheme onedark 
     highlight Normal guibg=black
 endif
-"MINGSW64 & xWindows & Term
-if !match($TERM,"xterm") 
-"    colorscheme onedark 
-    "highlight Normal guibg=black
-    "highlight Normal ctermbg=black
+"Termux
+if !match($TERM,"xterm-256color") 
+    colorscheme onedark 
+    highlight Normal ctermbg=black
 endif
 
 "Schoeneres Javascript:
