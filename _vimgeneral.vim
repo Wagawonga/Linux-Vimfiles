@@ -130,7 +130,7 @@ if !match($TERM,"xterm")
 "  || !match($TERM,"cygwin") 
     colorscheme onedark 
     highlight Normal guibg=black
-"    highlight Normal ctermbg=black
+    highlight Normal ctermbg=black
 endif
 
 "Schöneres Javascript:
