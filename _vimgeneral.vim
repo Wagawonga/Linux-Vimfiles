@@ -121,13 +121,16 @@ set relativenumber
 set number
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-if !match($TERM,"xterm") || ( has("gui_running") && has("win32") )
+   
+"Default
+colorscheme 0x7A69_dark
+"Wenn mehr Farben unterstützt werden:
+if !match($TERM,"xterm") 
+\  || ( has("gui_running") && has("win32") )
+"  || !match($TERM,"cygwin") 
     colorscheme onedark 
     set background=dark
     highlight Normal guibg=black
-else
-    colorscheme 0x7A69_dark
 endif
 
 "Schöneres Javascript:
