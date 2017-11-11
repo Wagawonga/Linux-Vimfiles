@@ -129,7 +129,7 @@ if !match($TERM,"xterm")
 \  || ( has("gui_running") && has("win32") )
 "  || !match($TERM,"cygwin") 
     colorscheme onedark 
-"    highlight Normal guibg=black
+    highlight Normal guibg=black
 "    highlight Normal ctermbg=black
 endif
 
