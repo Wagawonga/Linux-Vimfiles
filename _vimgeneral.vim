@@ -128,9 +128,9 @@ colorscheme 0x7A69_dark
 if !match($TERM,"xterm") 
 \  || ( has("gui_running") && has("win32") )
 "  || !match($TERM,"cygwin") 
-    highlight Normal guibg=black
-    set background=dark
     colorscheme onedark 
+"    highlight Normal guibg=black
+"    highlight Normal ctermbg=black
 endif
 
 "Schöneres Javascript:
