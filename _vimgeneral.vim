@@ -122,18 +122,21 @@ set number
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
    
-"Default
+"Default 
 colorscheme 0x7A69_dark
 "Wenn mehr Farben unterstützt werden:
-"gVim
 if ( has("gui_running") && has("win32") )
+    "gVim
     colorscheme onedark 
     highlight Normal guibg=black
-endif
-"Termux
-if !match($TERM,"xterm-256color") 
+elseif !match($TERM,"xterm-256color")  
+    "Termux
     colorscheme onedark 
     highlight Normal ctermbg=black
+elseif !match($TERM,"xterm")  
+    "Linux with xWindow
+    colorscheme onedark 
+    "black Background geht nicht!
 endif
 
 "Schoeneres Javascript:
