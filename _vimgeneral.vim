@@ -163,3 +163,8 @@ let g:csv_delim=';'
 
 set clipboard=unnamed
 set nofoldenable " Disable Folding when openening a file. Toggle with normalmode command zi
+
+" Set filetype for Delphi syntax Highlight:
+augroup filetypedetect
+    au BufRead,BufNewFile *.pas set filetype=Delphi
+augroup END
