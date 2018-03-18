@@ -168,3 +168,7 @@ set nofoldenable " Disable Folding when openening a file. Toggle with normalmode
 augroup filetypedetect
     au BufRead,BufNewFile *.pas set filetype=Delphi
 augroup END
+
+" Hier extra fuer Python. Spaeter Fallunterscheidung einfuegen:
+:map <F2> :w\|!python3 %<CR>
+
