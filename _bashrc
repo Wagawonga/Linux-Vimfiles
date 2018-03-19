@@ -1,3 +1,6 @@
+#Localen /bin Ordner zum Path hinzufuegen
+export PATH="$HOME/bin:$PATH"
+
 #Vim als Standard:
 export EDITOR=vim
 
