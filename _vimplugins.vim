@@ -85,3 +85,5 @@ Plugin 'https://github.com/plasticboy/vim-markdown.git'
 " Hier Delphi Syntaxhighlight : 
 Plugin 'https://github.com/vim-scripts/Delphi-7-2010.git'
 
+" Linting
+Plugin 'w0rp/ale'
