@@ -1,3 +1,6 @@
+#Damit tmux mit 256 Farben startet:
+alias tmux='tmux -2'
+
 #Localen /bin Ordner zum Path hinzufuegen
 export PATH="$HOME/bin:$PATH"
 
