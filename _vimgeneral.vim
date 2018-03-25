@@ -174,4 +174,5 @@ augroup END
 
 " Hier extra fuer Python. Spaeter Fallunterscheidung einfuegen:
 :map <F2> :w\|!python3 %<CR>
-
+" Fuer Tmux:
+:map [12~ :w\|!python3 %<CR>
