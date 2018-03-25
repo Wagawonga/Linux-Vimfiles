@@ -129,10 +129,13 @@ if ( has("gui_running") && has("win32") )
     "gVim
     colorscheme onedark 
     highlight Normal guibg=black
-elseif !match($TERM,"xterm-256color")  
+elseif !match($TERM,"xterm-256color") 
     "Termux
     colorscheme onedark 
     highlight Normal ctermbg=black
+elseif !match($TERM,"screen-256color") 
+    "Termux
+    colorscheme onedark 
 elseif !match($TERM,"xterm")  
     "Linux with xWindow
     colorscheme onedark 
