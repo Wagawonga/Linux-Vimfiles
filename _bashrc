@@ -1,3 +1,9 @@
+#Damit tmux mit 256 Farben startet:
+alias tmux='tmux -2'
+
+#Localen /bin Ordner zum Path hinzufuegen
+export PATH="$HOME/bin:$PATH"
+
 #Vim als Standard:
 export EDITOR=vim
 
@@ -5,4 +11,10 @@ export EDITOR=vim
 ~/bin/tmux_start.sh
 
 #Einstellen von PS1
-PS1='\n\[\033[0;35m\]`acpi | grep -E -o "[0-9]*%"`\[\033[00m\]:${debian_chroot:($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;31m\]`__git_ps1`\[\033[0;37m\]   \n$'
+ACPI=''
+type acpi > /dev/null 2>&1
+if [ $? -eq 0 ];then
+    ACPI='\[\033[0;35m\]`acpi | grep -E -o "[0-9]*%"`\[\033[00m\]:'
+fi
+PS1='\n'"$ACPI"'${debian_chroot:($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;31m\]`__git_ps1`\[\033[0;37m\]   \n$'
+unset ACPI
