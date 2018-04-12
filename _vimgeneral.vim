@@ -163,3 +163,8 @@ let g:csv_delim=';'
 
 set clipboard=unnamed
 set nofoldenable " Disable Folding when openening a file. Toggle with normalmode command zi
+
+" Case ignorieren
+set ignorecase
+" Case beruecksichtigen wenn ein Zeichen Gross Geschrieben:
+set smartcase " Kann mit \c und \C ueberschrieben werden!
