@@ -173,6 +173,6 @@ augroup filetypedetect
 augroup END
 
 " Hier extra fuer Python. Spaeter Fallunterscheidung einfuegen:
-:map <F2> :w\|!python3 %<CR>
-" Fuer Tmux:
-:map [12~ :w\|!python3 %<CR>
+" Tmux F2 umwandeln
+:map [12~ <F2> 
+:map <F2> :w\|!clear; python3 %<CR>
