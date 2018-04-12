@@ -167,17 +167,19 @@ let g:csv_delim=';'
 set clipboard=unnamed
 set nofoldenable " Disable Folding when openening a file. Toggle with normalmode command zi
 
+<<<<<<< HEAD
 " Case ignorieren
 set ignorecase
 " Case beruecksichtigen wenn ein Zeichen Gross Geschrieben:
 set smartcase " Kann mit \c und \C ueberschrieben werden!
-
+=======
 " Set filetype for Delphi syntax Highlight:
 augroup filetypedetect
     au BufRead,BufNewFile *.pas set filetype=Delphi
 augroup END
 
 " Hier extra fuer Python. Spaeter Fallunterscheidung einfuegen:
-" Tmux F2 umwandeln
-:map [12~ <F2> 
-:map <F2> :w\|!clear; python3 %<CR>
+:map <F2> :w\|!python3 %<CR>
+" Fuer Tmux:
+:map [12~ :w\|!python3 %<CR>
+>>>>>>> 5aefe65cd63b357dc4b0d54e4b9573744a705dfc
