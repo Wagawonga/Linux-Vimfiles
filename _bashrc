@@ -15,7 +15,7 @@ export EDITOR=vim
 #hinzugefuegter tmux start.
 ~/bin/tmux_start.sh
 
-#Glabstar activieren. ** als Wildcard für beliebiege Pfade
+#Globstar aktivieren. ** als Wildcard für beliebiege Pfade
 shopt -s globstar
 
 #Einstellen von PS1

@@ -133,6 +133,9 @@ elseif !match($TERM,"xterm-256color")
     "Termux
     colorscheme onedark 
     highlight Normal ctermbg=black
+elseif !match($TERM,"screen") 
+    "tmux in Termux
+    colorscheme onedark 
 elseif !match($TERM,"screen-256color") 
     "Termux
     colorscheme onedark 
