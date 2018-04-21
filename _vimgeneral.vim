@@ -184,3 +184,6 @@ augroup END
 " Tmux F2 umwandeln
 :map [12~ <F2> 
 :map <F2> :w\|!clear; python3 %<CR>
+
+" Maus in allen modi erlauben:
+set mouse=a

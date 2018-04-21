@@ -1,7 +1,7 @@
 #Kleine verbesserung von cd
-alias ..="cd.."
-alias ....="cd../.."
-alias ......="cd../../.."
+alias ..="cd .."
+alias ....="cd ../.."
+alias ......="cd ../../.."
 
 #Damit tmux mit 256 Farben startet:
 alias tmux='tmux -2'
