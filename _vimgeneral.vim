@@ -186,4 +186,7 @@ augroup END
 :map <F2> :w\|!clear; python3 %<CR>
 
 " Maus in allen modi erlauben:
-set mouse=a
+set mouse=a 
+
+" Bessere Keys fuer Easymotion:
+let g:EasyMotion_keys = '1234567890qwertzuiopüyxcvbnm,.-ghfjdkslaö'
