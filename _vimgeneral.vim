@@ -143,6 +143,11 @@ elseif !match($TERM,"xterm")
     "Linux with xWindow
     colorscheme onedark 
     "black Background geht nicht!
+    "Breiter Cursor in vim
+    let &t_ti.="\e[1 q"
+    let &t_SI.="\e[5 q"
+    let &t_EI.="\e[1 q"
+    let &t_te.="\e[0 q"
 endif
 
 "Schoeneres Javascript:
@@ -190,3 +195,6 @@ set mouse=a
 
 " Bessere Keys fuer Easymotion:
 let g:EasyMotion_keys = '1234567890qwertzuiopüyxcvbnm,.-ghfjdkslaö'
+
+" damit Tabellen Markdown kompatibel sind:
+let g:table_mode_corner='|'
