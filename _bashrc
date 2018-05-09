@@ -2,7 +2,6 @@
 alias cd-="popd > /dev/null"
 alias cd="pushd > /dev/null"
 
-
 #Kleine verbesserung von cd
 alias ..="cd .."
 alias ....="cd ../.."
