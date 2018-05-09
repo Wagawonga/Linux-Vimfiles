@@ -148,6 +148,9 @@ elseif !match($TERM,"xterm")
     let &t_SI.="\e[5 q"
     let &t_EI.="\e[1 q"
     let &t_te.="\e[0 q"
+    "Kein Delay beim anzeigen des Cursors.
+    set ttimeoutlen=0
+    set timeoutlen=1000
 endif
 
 "Schoeneres Javascript:
@@ -198,3 +201,4 @@ let g:EasyMotion_keys = '1234567890qwertzuiopüyxcvbnm,.-ghfjdkslaö'
 
 " damit Tabellen Markdown kompatibel sind:
 let g:table_mode_corner='|'
+
