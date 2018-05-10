@@ -1,9 +1,10 @@
 ﻿syntax enable
 
-"My preferences
-set shiftwidth=4
+" Leerzeichen beim einruecken
+set shiftwidth=2
 set autoindent
 set expandtab
+" Leerzeichen bei Tab
 set tabstop=4
 set softtabstop=4
 set backspace=indent,eol,start
@@ -133,11 +134,16 @@ elseif !match($TERM,"xterm-256color")
     "Termux
     colorscheme onedark 
     highlight Normal ctermbg=black
-elseif !match($TERM,"screen") 
-    "tmux in Termux
-    colorscheme onedark 
 elseif !match($TERM,"screen-256color") 
     "Termux
+    colorscheme onedark 
+    "Cursor richtig anzeigen:
+    let &t_ti.="\e[1 q"
+    let &t_SI.="\e[5 q"
+    let &t_EI.="\e[1 q"
+    let &t_te.="\e[0 q"
+elseif !match($TERM,"screen") 
+    "tmux in Termux
     colorscheme onedark 
 elseif !match($TERM,"xterm")  
     "Linux with xWindow
