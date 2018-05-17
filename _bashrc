@@ -28,7 +28,7 @@ type acpi > /dev/null 2>&1
 #Test ob acpi installiert
 if [ $? -eq 0 ];then
     #Wenn acpi Batteristatus = 0% dann wohl desktop -> keine Anzeige von acpi!
-    if acpi -b | grep -vq 'Full, 0%';then
+    if acpi -b | grep -vq ' 0%';then
         ACPI='\[\033[0;35m\]`acpi | grep -E -o "[0-9]*%"`\[\033[00m\]:'
     fi
 fi
