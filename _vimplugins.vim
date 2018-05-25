@@ -87,3 +87,10 @@ Plugin 'https://github.com/vim-scripts/Delphi-7-2010.git'
 
 " Linting
 Plugin 'w0rp/ale'
+
+" Damit Textobjekte einfacher erstellt werden koennen
+" Noetig fuer das EntiryDokument Plugin
+Plugin 'https://github.com/kana/vim-textobj-user.git'
+
+"Entiry Textobject (ie ae)
+Plugin 'https://github.com/kana/vim-textobj-entire.git'
