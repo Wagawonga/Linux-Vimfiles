@@ -208,3 +208,5 @@ let g:EasyMotion_keys = '1234567890qwertzuiopüyxcvbnm,.-ghfjdkslaö'
 " damit Tabellen Markdown kompatibel sind:
 let g:table_mode_corner='|'
 
+" Damit Tabcomplete sich wie in Bash verhaelt.
+set wildmode=longest,list
