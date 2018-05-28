@@ -1,6 +1,12 @@
 #Historie verbessern
 alias cd-="popd > /dev/null"
-alias cd="pushd > /dev/null"
+function cd {
+    if [ $# -eq '0' ]; then
+        pushd ~ > /dev/null 
+    else
+        pushd $1 > /dev/null
+    fi
+}
 
 #Kleine verbesserung von cd
 alias ..="cd .."
