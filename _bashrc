@@ -1,6 +1,7 @@
 #Historie verbessern
 alias cd-="popd > /dev/null"
 alias cd..="pushd .. > /dev/null"
+#Als Function, damit cd ohne Para ins Homeverzeichnis fuehrt.
 function cd {
     if [ $# -eq '0' ]; then
         pushd ~ > /dev/null 
