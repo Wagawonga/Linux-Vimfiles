@@ -94,6 +94,3 @@ Plugin 'https://github.com/kana/vim-textobj-user.git'
 
 "Entiry Textobject (ie ae)
 Plugin 'https://github.com/kana/vim-textobj-entire.git'
-
-"Zum Zeichnen von boxen und einfachen Diagrammen
-Plugin 'https://github.com/gyim/vim-boxdraw'
