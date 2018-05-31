@@ -21,7 +21,10 @@ nmap äk m`k"_dd``
 "Remaps für Yankstrack
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
-    
+
+"Damit Y bis end yanked
+map Y y$   
+
 "remap fuer C
 map <F9> :w<CR>:!clear&&gcc % -o %< && ./%<<CR>
 "------------------------------------------------------
