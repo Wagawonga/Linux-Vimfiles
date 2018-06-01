@@ -92,5 +92,8 @@ Plugin 'w0rp/ale'
 " Noetig fuer das EntiryDokument Plugin
 Plugin 'https://github.com/kana/vim-textobj-user.git'
 
-"Entiry Textobject (ie ae)
+" Entiry Textobject (ie ae)
 Plugin 'https://github.com/kana/vim-textobj-entire.git'
+
+" Zum ungestoerem schreiben
+Plugin 'https://github.com/mikewest/vimroom.git'
