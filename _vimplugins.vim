@@ -97,3 +97,6 @@ Plugin 'https://github.com/kana/vim-textobj-entire.git'
 
 " Zum ungestoerem schreiben
 Plugin 'https://github.com/mikewest/vimroom.git'
+
+" alternative zu vimroom (zum schreiben)
+Plugin 'https://github.com/junegunn/goyo.vim.git'
