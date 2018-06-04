@@ -106,3 +106,6 @@ Plugin 'https://github.com/scrooloose/nerdtree.git'
 
 " Undotree
 Plugin 'https://github.com/mbbill/undotree.git'
+
+" Besserer Startscreen
+Plugin 'https://github.com/mhinz/vim-startify.git'
