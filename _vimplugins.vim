@@ -104,6 +104,5 @@ Plugin 'https://github.com/junegunn/goyo.vim.git'
 " Nerdtree Fileexplorer
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 
-
-
-
+" Undotree
+Plugin 'https://github.com/mbbill/undotree.git'
