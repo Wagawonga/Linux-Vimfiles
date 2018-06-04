@@ -100,3 +100,10 @@ Plugin 'https://github.com/kana/vim-textobj-entire.git'
 
 " alternative zu vimroom (zum schreiben)
 Plugin 'https://github.com/junegunn/goyo.vim.git'
+
+" Nerdtree Fileexplorer
+Plugin 'https://github.com/scrooloose/nerdtree.git'
+
+
+
+
