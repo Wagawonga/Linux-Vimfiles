@@ -42,3 +42,6 @@ if [ $? -eq 0 ];then
 fi
 PS1='\n'"$ACPI"'${debian_chroot:($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;31m\]`__git_ps1`\[\033[0;37m\]   \n$'
 unset ACPI
+
+#Capslock als Escape
+xmodmap ~/dotfiles/keymap
