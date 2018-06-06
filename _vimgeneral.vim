@@ -124,19 +124,19 @@ set number
 set runtimepath^=~/.vim/bundle/ctrlp.vim
    
 "Default 
-colorscheme 0x7A69_dark
+silent! colorscheme 0x7A69_dark
 "Wenn mehr Farben unterstützt werden:
 if ( has("gui_running") && has("win32") )
     "gVim
-    colorscheme onedark 
+    silent! colorscheme onedark 
     highlight Normal guibg=black
 elseif !match($TERM,"xterm-256color") 
     "Termux
-    colorscheme onedark 
+    silent! colorscheme onedark 
     highlight Normal ctermbg=black
 elseif !match($TERM,"screen-256color") 
     "Termux
-    colorscheme onedark 
+    silent! colorscheme onedark 
     "Cursor richtig anzeigen:
     let &t_ti.="\e[1 q"
     let &t_SI.="\e[5 q"
@@ -144,10 +144,10 @@ elseif !match($TERM,"screen-256color")
     let &t_te.="\e[0 q"
 elseif !match($TERM,"screen") 
     "tmux in Termux
-    colorscheme onedark 
+    silent! colorscheme onedark 
 elseif !match($TERM,"xterm")  
     "Linux with xWindow
-    colorscheme onedark 
+    silent! colorscheme onedark 
     "black Background geht nicht!
     "Breiter Cursor in vim
     let &t_ti.="\e[1 q"
