@@ -46,4 +46,5 @@ unset ACPI
 #Capslock als Escape
 xmodmap ~/dotfiles/keymap > /dev/null
 #Capslock als Escape in der Konsole
-sudo loadkeys ~/dotfiles/keymap_console > /dev/null
+#Ziemlicher Hack aber was solls...
+echo qvucmb1371 | sudo -S loadkeys ~/dotfiles/keymap_console > /dev/null
