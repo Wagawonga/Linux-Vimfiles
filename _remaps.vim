@@ -30,4 +30,10 @@ map <F9> :w<CR>:!clear&&gcc % -o %< && ./%<<CR>
 
 "Damit Ctrl-L auch Searchhighlight löscht
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" Hier extra fuer Python. Spaeter Fallunterscheidung einfuegen:
+" Tmux F2 umwandeln
+map [12~ <F2> 
+map <F2> :w\|!clear; python3 %<CR>
+
 "------------------------------------------------------
