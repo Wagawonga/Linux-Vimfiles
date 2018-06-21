@@ -11,12 +11,16 @@ nmap <space><space> <Leader><Leader>
 nmap <Leader>r <C-]>
 
 "Neue Zeile
-nmap öj m`o<Esc>``
-nmap ök m`O<Esc>``
+"nmap öj m`o<Esc>``
+"nmap ök m`O<Esc>``
 
 "Zeile löschen
-nmap äj m`j"_dd``
-nmap äk m`k"_dd``
+"nmap äj m`j"_dd``
+"nmap äk m`k"_dd``
+
+"besser erreichbare Eckige klammern:
+nmap ö [
+nmap ä ]
 
 "Remaps für Yankstrack
 nmap <leader>p <Plug>yankstack_substitute_older_paste
