@@ -16,12 +16,9 @@ set noswapfile
 
 syntax enable
 set laststatus=2
-
-
-"Strictly necessary for Powerline
 set encoding=utf-8
-"Set to whatever font you like.
-set guifont=Inconsolata\ for\ Powerline:h12
+
+let g:airline_symbols_ascii = 1
 
 "für Tagbar muss die Filetype detecton an sein:
 filetype on
@@ -205,3 +202,6 @@ let g:table_mode_corner='|'
 
 " Damit Tabcomplete sich wie in Bash verhaelt.
 set wildmode=longest,list
+
+" Offene Buffer anzeigen in Airline
+let g:airline#extensions#tabline#enabled = 1

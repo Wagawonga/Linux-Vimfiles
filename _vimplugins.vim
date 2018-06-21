@@ -25,8 +25,11 @@ Plugin 'https://github.com/easymotion/vim-easymotion.git'
 " Baumansicht der Klassenstruktur: (Brauch ctags)
 Plugin 'https://github.com/majutsushi/tagbar.git'
 
+" Vim stausleisten:
 " Vim-Powerline (Statusleiste Unten)
-Plugin 'https://github.com/Lokaltog/vim-powerline.git'
+" Plugin 'https://github.com/Lokaltog/vim-powerline.git'
+" Airbar-statusleiste
+Plugin 'https://github.com/vim-airline/vim-airline.git'
 
 " Tab Completion für Python
 "Plugin 'https://github.com/davidhalter/jedi-vim'

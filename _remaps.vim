@@ -27,7 +27,7 @@ nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 "Damit Y bis end yanked
-map Y y$   
+map Y y$
 
 "remap fuer C
 map <F9> :w<CR>:!clear&&gcc % -o %< && ./%<<CR>
@@ -37,7 +37,7 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Hier extra fuer Python. Spaeter Fallunterscheidung einfuegen:
 " Tmux F2 umwandeln
-map [12~ <F2> 
+map [12~ <F2>
 map <F2> :w\|!clear; python3 %<CR>
 
 "------------------------------------------------------
