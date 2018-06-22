@@ -22,6 +22,10 @@ nmap <Leader>r <C-]>
 nmap ö [
 nmap ä ]
 
+"Schnelles wechseln von Buffern:
+nmap <Leader>ö :bprevious<CR>
+nmap <Leader>ä :bnext<CR>
+
 "Remaps für Yankstrack
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste

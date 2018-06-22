@@ -19,7 +19,7 @@ set laststatus=2
 set encoding=utf-8
 
 let g:airline_symbols_ascii = 1
-
+set guifont=Consolas:h11
 "für Tagbar muss die Filetype detecton an sein:
 filetype on
 
@@ -155,9 +155,6 @@ elseif !match($TERM,"xterm")
     set ttimeoutlen=0
     set timeoutlen=1000
 endif
-
-"Schoeneres Javascript:
-set guifont=DejaVu_Sans_Mono:h8:cANSI:qDRAFT
 
 " Syntastic setup
 let g:syntastic_javascript_checkers = ['jshint']
