@@ -112,3 +112,6 @@ Plugin 'https://github.com/mbbill/undotree.git'
 
 " Besserer Startscreen
 Plugin 'https://github.com/mhinz/vim-startify.git'
+
+" Shiftwifh und expand tab heuristisch bestimmen
+Plugin 'https://github.com/tpope/vim-sleuth.git'

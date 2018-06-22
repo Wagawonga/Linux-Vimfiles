@@ -18,7 +18,6 @@ syntax enable
 set laststatus=2
 set encoding=utf-8
 
-let g:airline_symbols_ascii = 1
 set guifont=Consolas:h11
 "für Tagbar muss die Filetype detecton an sein:
 filetype on
@@ -202,3 +201,6 @@ set wildmode=longest,list
 
 " Offene Buffer anzeigen in Airline
 let g:airline#extensions#tabline#enabled = 1
+" Bei offenen Buffern nur den Dateinamen anzeigen und keinen Pfad:
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_symbols_ascii = 1
