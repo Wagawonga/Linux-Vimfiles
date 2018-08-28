@@ -1,3 +1,6 @@
+#Um den __git_ps1 Fehler zu beheben:
+source ~/.bash_git
+
 #Historie verbessern
 alias cd-="popd > /dev/null"
 alias cd..="pushd .. > /dev/null"
