@@ -51,3 +51,6 @@ xmodmap ~/dotfiles/keymap &> /dev/null
 #Capslock als Escape in der Konsole
 #Ziemlicher Hack aber was solls...
 echo qvucmb1371 | sudo -S loadkeys ~/dotfiles/keymap_console &> /dev/null
+
+#vi mode in bash:
+set -o vi on
