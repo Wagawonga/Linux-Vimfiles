@@ -1,0 +1,6 @@
+Ctrl-t      - Paste sel files/dirs
+Ctrl-r      - Paste from CMD-History
+Alt-C       - CD in sel dir
+**<Tab>     - Trigger fzf autocomplete in current dir
+../**<Tab>  - Trigger autocomp. in parent dir
+kill -9 <Tab> - autocomp Process (ohne **)
