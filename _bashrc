@@ -19,6 +19,8 @@ alias ....="cd ../.."
 alias ......="cd ../../.."
 
 alias shutdown="sudo shutdown now"
+alias w3m="w3m www.google.de"
+alias reboot="sudo reboot now"
 
 #Damit tmux mit 256 Farben startet:
 alias tmux='tmux -2'
