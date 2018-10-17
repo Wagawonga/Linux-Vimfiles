@@ -134,10 +134,12 @@ elseif !match($TERM,"screen-256color")
     "Termux
     silent! colorscheme onedark 
     "Cursor richtig anzeigen:
-    let &t_ti.="\e[1 q"
-    let &t_SI.="\e[5 q"
-    let &t_EI.="\e[1 q"
-    let &t_te.="\e[0 q"
+    "Da es Probleme bei der Anzeige in guake gab ist die
+    "Modifikation des Curseres wieder entfernt worden
+    "let &t_ti.="\e[1 q"
+    "let &t_SI.="\e[5 q"
+    "let &t_EI.="\e[1 q"
+    "let &t_te.="\e[0 q"
 elseif !match($TERM,"screen") 
     "tmux in Termux
     silent! colorscheme onedark 
