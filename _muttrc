@@ -1,26 +1,21 @@
-#Hiermit bringen wir Mutt unsere Login-Daten für die jeweiligen Accounts bei
-account-hook daniel.andres.steinbach@imap.googlemail.com 'set imap_user="daniel.andres.steinbach@gmail.com" imap_pass=IhPm10Zom+'
-
-#Wenn man die Mailbox wechselt, sollen die Server-Daten aktualisiert werden
-folder-hook daniel.andres.steinbach@imap.googlemail.com 'source ~/dotfiles/google'
-
-macro index t "c=<tab><tab><tab>"            #drücke t, um in den Ordnern des Postfaches zu navigieren
-
-##legt fest, welche Mailboxen zu Anfang bekannt sind und beim Start abgerufen werden sollen
-mailboxes imaps://daniel.andres.steinbach@imap.googlemail.com/ #siehe auch http://blog.mafr.de/2012/09/09/mutt-too-many-errors/
-
-##Beim Start soll das Google-Konto geöffnet sein
-source ~/dotfiles/google
-
-set from = "daniel.andres.steinbach@googlemail.com"
 set realname = "Daniel Steinbach"
-set spoolfile = "+INBOX"
-set postponed ="+[Gmail]/Drafts"
-set header_cache =~/.mutt/cache/headers
-set message_cachedir =~/.mutt/cache/bodies
-set certificate_file =~/.mutt/certificates
+set imap_user = 'daniel.andres.steinbach@gmail.com'
+set imap_pass = 'jonodzwvueekzryd'
+set spoolfile = imaps://imap.gmail.com:993/INBOX
 set smtp_url = "smtp://daniel.andres.steinbach@smtp.gmail.com:587/"
-#set smtp_pass = 'jonodzwvueekzryd'
+set smtp_pass = 'jonodzwvueekzryd'
+set folder = "imaps://imap.gmail.com:993"
+set record="+[Gmail]/Sent Mail"
+set postponed="+[Gmail]/Drafts"
+set header_cache="~/.mutt/cache/headers"
+set message_cachedir="~/.mutt/cache/bodies"
+set certificate_file=~/.mutt/certificates
+
+#Vim direkt im insertmode mit max breite von 70
+set editor="vim -c 'startinsert' -c 'set tw=70 et' -c 'set wrap' '+/^$'"
+
+set sort=threads
+set sort_aux=last-date-received
 
 set move = no
 set imap_keepalive = 900
@@ -30,15 +25,13 @@ set edit_hdrs                               #Empfänger u.a. auch im Editor bear
 set signature ="~/.mutt/signatur"           #Datei, die den Text der Signatur enthält
 set attribution="%f schrieb am %d:"         #Zitatkennzeichnung in unserer Muttersprache :)
 
-set sort=threads                            #E-Mails werden nach Gesprächsverlauf und nach Datum sortiert
-set sort_aux=date-sent
-#set sort=date                              #würde alternativ zuerst nach Datum sortieren
-
-unset allow_8bit                            #u.U. verbesserte Darstellung von Umlauten
 set date_format="%a, %d. %b %H:%M"          #gibt an, wie das Datum formatiert wird
 set index_format="%4C %Z %D %-22.22F (%?l?%4l&%4c?) %s"4c#Format der Mail-Übersicht
 set folder_format="%2C %8s %d %t %N %f"     #Format des Datei-Browsers
 set pager_index_lines=10                    #Anzahl der angezeigten Mails in der Übersicht
-#Editor, der zum Verfassen der E-Mail benutzt wird, hier Vim beginnend im Einfügemodus auf der ersten Leerzeile und Zeilenumbruch bei 70 Zeichen
-set editor="vim -c 'startinsert' -c 'set tw=70 et' -c 'set wrap' '+/^$'"
 
+#Für das Addressbuch goobook:
+set query_command="goobook query %s"  #mit Q goobook query starten
+bind editor <Tab> complete-query #Tab completion
+#um mit a einen neuen Eintrag hinzuzufuegen
+macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
