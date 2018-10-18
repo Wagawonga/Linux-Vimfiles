@@ -148,10 +148,12 @@ elseif !match($TERM,"xterm")
     silent! colorscheme onedark 
     "black Background geht nicht!
     "Breiter Cursor in vim
-    let &t_ti.="\e[1 q"
-    let &t_SI.="\e[5 q"
-    let &t_EI.="\e[1 q"
-    let &t_te.="\e[0 q"
+    "Da es Probleme bei der Anzeige in guake gab ist die
+    "Modifikation des Curseres wieder entfernt worden
+    "let &t_ti.="\e[1 q"
+    "let &t_SI.="\e[5 q"
+    "let &t_EI.="\e[1 q"
+    "let &t_te.="\e[0 q"
     "Kein Delay beim anzeigen des Cursors.
     set ttimeoutlen=0
     set timeoutlen=1000

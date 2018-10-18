@@ -1,0 +1,5 @@
+set imap_user = 'daniel.andres.steinbach@googlemail.com'
+set imap_pass = 'jonodzwvueekzryd'
+#set spoolfile = imaps://imap.gmail.com:993/INBOX
+set folder = "imaps://imap.gmail.com:993"
+set record="+[Gmail]/Sent Mail"
