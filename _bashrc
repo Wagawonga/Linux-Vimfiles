@@ -58,3 +58,6 @@ echo qvucmb1371 | sudo -S loadkeys ~/dotfiles/keymap_console &> /dev/null
 
 #vi mode in bash:
 set -o vi on
+
+alias whatsapp='whatsapp --token $(cat ~/pbAccToken)'
+
