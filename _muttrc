@@ -35,3 +35,6 @@ set query_command="goobook query %s"  #mit Q goobook query starten
 bind editor <Tab> complete-query #Tab completion
 #um mit a einen neuen Eintrag hinzuzufuegen
 macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
+
+auto_view text/html                                      # view html automatically
+alternative_order text/plain text/enriched text/html     # save html for last

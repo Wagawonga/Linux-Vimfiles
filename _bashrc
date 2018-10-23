@@ -13,6 +13,9 @@ function cd {
     fi
 }
 
+#Schneller zu erk1:
+alias erk1dir="/mnt/c/eigen/erk1"
+
 #Kleine verbesserung von cd
 alias ..="cd .."
 alias ....="cd ../.."
