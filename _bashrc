@@ -67,3 +67,5 @@ set -o vi on
 
 alias whatsapp='whatsapp --token $(cat ~/pbAccToken)'
 
+#for setting up thefuck
+eval $(thefuck --alias)
