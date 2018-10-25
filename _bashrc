@@ -25,11 +25,14 @@ alias shutdown="sudo shutdown now"
 alias w3m="w3m www.google.de"
 alias reboot="sudo reboot now"
 
+alias go=googler
 #Damit tmux mit 256 Farben startet:
 alias tmux='tmux -2'
 
 #Localen /bin Ordner zum Path hinzufuegen
 export PATH="$HOME/bin:$PATH"
+#Python scipte in Path
+export PATH="$HOME/.local/bin:$PATH"
 
 #Vim als Standard:
 export EDITOR=vim
@@ -69,3 +72,6 @@ alias whatsapp='whatsapp --token $(cat ~/pbAccToken)'
 
 #for setting up thefuck
 eval $(thefuck --alias)
+
+#damit googler w3m benutzt:
+export BROWSER=w3m
