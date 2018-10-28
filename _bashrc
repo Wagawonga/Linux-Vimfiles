@@ -13,13 +13,16 @@ function cd {
     fi
 }
 
-#Schneller zu erk1:
+#Ordner Shortcuts
 alias erk1dir="/mnt/c/eigen/erk1"
+alias c="/mnt/c/"
+alias dktp="/mnt/c/Users/dabst/Desktop/"
+
 
 #Kleine verbesserung von cd
 alias ..="cd .."
-alias ....="cd ../.."
-alias ......="cd ../../.."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 alias shutdown="sudo shutdown now"
 alias w3m="w3m www.google.de"
