@@ -133,6 +133,8 @@ elseif !match($TERM,"xterm-256color")
 elseif !match($TERM,"screen-256color") 
     "Termux
     silent! colorscheme onedark 
+    "Anpassen des Highlight bei Visual select in cmder
+    hi Visual term=reverse cterm=reverse guibg=Grey
     "Cursor richtig anzeigen:
     "Da es Probleme bei der Anzeige in guake gab ist die
     "Modifikation des Curseres wieder entfernt worden

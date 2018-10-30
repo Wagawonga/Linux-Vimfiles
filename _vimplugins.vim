@@ -118,3 +118,9 @@ Plugin 'https://github.com/tpope/vim-sleuth.git'
 
 " Lesezeichen an der Seite anzeigen lassen (und extra Funktionen fuer Lesezeichen)
 Plugin 'https://github.com/kshenoy/vim-signature.git'
+
+" Dependency des Colorsheme Switchers
+Plugin 'https://github.com/xolox/vim-misc.git'
+
+" Colorsheme Switcher
+Plugin 'https://github.com/xolox/vim-colorscheme-switcher.git'
