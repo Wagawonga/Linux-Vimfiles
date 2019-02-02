@@ -1,3 +1,6 @@
+#Um aus zsh direkt git bash zu starten:
+alias startgit="/mnt/c/Program\ Files/Git/bin/bash.exe --cd=c:/eigen/erk1/"
+
 #Um den __git_ps1 Fehler zu beheben:
 source ~/.bash_git
 
