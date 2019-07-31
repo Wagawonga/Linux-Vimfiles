@@ -214,3 +214,6 @@ let g:airline_symbols_ascii = 1
 " Scolloffset setzten, damit man nicht in der letzten spalte arbeiten muss
 " ohne Kontext.
 set so=7
+
+" Damit Fenster die gleiche Groesse bahalten
+set noequalalways
