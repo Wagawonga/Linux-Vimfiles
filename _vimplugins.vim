@@ -32,7 +32,7 @@ Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/vim-airline/vim-airline.git'
 
 " Tab Completion für Python
-"Plugin 'https://github.com/davidhalter/jedi-vim'
+Plugin 'https://github.com/davidhalter/jedi-vim'
 
 " Table mode für Vim
 Plugin 'https://github.com/dhruvasagar/vim-table-mode' 
@@ -122,5 +122,5 @@ Plugin 'https://github.com/kshenoy/vim-signature.git'
 " Dependency des Colorsheme Switchers
 Plugin 'https://github.com/xolox/vim-misc.git'
 
-" Colorsheme Switcher
+" Colorshem
 Plugin 'https://github.com/xolox/vim-colorscheme-switcher.git'

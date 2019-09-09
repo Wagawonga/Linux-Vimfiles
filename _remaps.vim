@@ -3,7 +3,7 @@
 "------------------------------------------------------
 
 "Leader auf space gesetzt.
-nmap <space> <Leader>
+map <space> <Leader>
 "Fuer Easymotion
 nmap <space><space> <Leader><Leader>
 
@@ -42,6 +42,6 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " Hier extra fuer Python. Spaeter Fallunterscheidung einfuegen:
 " Tmux F2 umwandeln
 map [12~ <F2>
-map <F2> :w\|!clear; sudo python3 %<CR>
+map <F2> :w\|!clear; ~/bin/toPi.sh <CR>
 
 "------------------------------------------------------
