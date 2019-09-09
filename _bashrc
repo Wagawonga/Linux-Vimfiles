@@ -44,7 +44,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export EDITOR=vim
 
 #hinzugefuegter tmux start.
-~/bin/tmux_start.sh
+#Soll in die lokale .*rc damit in der auf jeder Maschine
+#einzen bestimmt werden kann mit welcher Shell tmux starten soll!
+#~/bin/tmux_start.sh
 
 #Einstellen von PS1
 ACPI=''
