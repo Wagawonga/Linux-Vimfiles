@@ -83,3 +83,7 @@ eval $(thefuck --alias)
 
 #damit googler w3m benutzt:
 export BROWSER=w3m
+
+if type zsh; then
+    exec zsh
+fi
