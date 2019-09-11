@@ -124,3 +124,6 @@ Plugin 'https://github.com/xolox/vim-misc.git'
 
 " Colorshem
 Plugin 'https://github.com/xolox/vim-colorscheme-switcher.git'
+
+" bestes colorscheme
+Plugin 'https://github.com/joshdick/onedark.vim'
