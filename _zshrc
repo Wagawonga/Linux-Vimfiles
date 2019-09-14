@@ -1,8 +1,56 @@
+# if you come from bash you might have to change your $path.
+# export path=$home/bin:/usr/local/bin:$path
+
+# path to your oh-my-zsh installation.
+ZSH="/home/daniel/.oh-my-zsh"
+
+#Themes sollen in ~/.zshrc gesetzt werden!
+#ZSH_THEME="gallois"
+#ZSH_THEME="muse"
+#ZSH_THEME="agnoster"
+
+#Default user, damit der Benutzer in PS1 beim agnoster Theme nich angezeigt wird
+DEFAULT_USER=`whoami`
+
+# uncomment the following line to use case-sensitive completion.
+# case_sensitive="true"
+
+# uncomment the following line to disable auto-setting terminal title.
+# disable_auto_title="true"
+
+# uncomment the following line to enable command auto-correction.
+# enable_correction="true"
+
+# uncomment the following line to display red dots whilst waiting for completion.
+# completion_waiting_dots="true"
+
+# uncomment the following line if you want to disable marking untracked files
+# under vcs as dirty. this makes repository status check for large repositories
+# much, much faster.
+# disable_untracked_files_dirty="true"
+
+plugins=(
+  git
+  sudo
+)
+
+source $ZSH/oh-my-zsh.sh
+source ~/dotfiles/_generalrc
+
 # Enable Ctrl-x-e to edit command line 
 autoload -U edit-command-line 
 # Emacs style 
 zle -N edit-command-line 
 bindkey '^xe' edit-command-line 
 bindkey '^x^e' edit-command-line
-PROMPT='\n'"$ACPI"'${debian_chroot:($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;31m\]`__git_ps1`\[\033[0;37m\]   \n$'
+#PROMPT='\n'"$ACPI"'${debian_chroot:($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;31m\]`__git_ps1`\[\033[0;37m\]   \n$'
 
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/mtn/c/eigen/bin/:$PATH"
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey -v #Vi-Mode
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Fuer fishshell aehnliche auto compl.
+bindkey '^ ' autosuggest-accept
+~/bin/tmux_start.sh
