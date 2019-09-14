@@ -5,9 +5,12 @@
 ZSH="$HOME/.oh-my-zsh"
 
 #Themes sollen in ~/.zshrc gesetzt werden!
-#ZSH_THEME="gallois"
-#ZSH_THEME="muse"
-#ZSH_THEME="agnoster"
+#hier nur "default"
+if [ -e $ZSH_THEME ]; then
+  #ZSH_THEME="gallois"
+  #ZSH_THEME="muse"
+  ZSH_THEME="agnoster"
+fi
 
 #Default user, damit der Benutzer in PS1 beim agnoster Theme nich angezeigt wird
 DEFAULT_USER=`whoami`

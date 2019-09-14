@@ -2,7 +2,7 @@
 source ~/dotfiles/_aliases
 
 #for setting up thefuck
-if which thefuck > dev/null ; then
+if which thefuck > /dev/null ; then
     eval $(thefuck --alias)
 fi
 
