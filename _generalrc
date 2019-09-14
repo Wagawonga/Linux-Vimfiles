@@ -2,7 +2,9 @@
 source ~/dotfiles/_aliases
 
 #for setting up thefuck
-eval $(thefuck --alias)
+if $(which thefuck); then
+    eval $(thefuck --alias)
+fi
 
 #damit googler w3m benutzt:
 export BROWSER=w3m
