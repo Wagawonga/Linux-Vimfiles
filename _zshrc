@@ -53,4 +53,5 @@ bindkey -v #Vi-Mode
 
 # Fuer fishshell aehnliche auto compl.
 bindkey '^ ' autosuggest-accept
+cd ~
 ~/bin/tmux_start.sh
