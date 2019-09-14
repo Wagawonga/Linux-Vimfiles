@@ -1,52 +1,15 @@
-﻿#Um aus zsh direkt git bash zu starten:
-alias startgit="/mnt/c/Program\ Files/Git/bin/bash.exe --cd=c:/eigen/erk1/"
+﻿
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-#Um den __git_ps1 Fehler zu beheben:
-source ~/.bash_git
-
-#Historie verbessern
-alias cd-="popd > /dev/null"
-alias cd..="pushd .. > /dev/null"
-#Als Function, damit cd ohne Para ins Homeverzeichnis fuehrt.
-function cd {
-    if [ $# -eq '0' ]; then
-        pushd ~ > /dev/null 
-    else
-        pushd $1 > /dev/null
-    fi
-}
-
-#Ordner Shortcuts
-alias erk1dir="/mnt/c/eigen/erk1"
-alias c="/mnt/c/"
-alias dktp="/mnt/c/Users/dabst/Desktop/"
-
-
-#Kleine verbesserung von cd
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-
-alias shutdown="sudo shutdown now"
-alias w3m="w3m www.google.de"
-alias reboot="sudo reboot now"
-
-alias go=googler
-#Damit tmux mit 256 Farben startet:
-alias tmux='tmux -2'
-
-#Localen /bin Ordner zum Path hinzufuegen
-export PATH="$HOME/bin:$PATH"
-#Python scipte in Path
-export PATH="$HOME/.local/bin:$PATH"
-
-#Vim als Standard:
-export EDITOR=vim
+source ~/dotfiles/_generalrc
 
 #hinzugefuegter tmux start.
 #Soll in die lokale .*rc damit in der auf jeder Maschine
 #einzen bestimmt werden kann mit welcher Shell tmux starten soll!
 #~/bin/tmux_start.sh
+
+#Globstar aktivieren. ** als Wildcard für beliebiege Pfade
+shopt -s globstar
 
 #Einstellen von PS1
 ACPI=''
@@ -58,32 +21,10 @@ if [ $? -eq 0 ];then
         ACPI='\[\033[0;35m\]`acpi | grep -E -o "[0-9]*%"`\[\033[00m\]:'
     fi
 fi
-
-#Globstar aktivieren. ** als Wildcard für beliebiege Pfade
-if [ $0 = "-bash" ];then
-    shopt -s globstar
-    PS1='\n'"$ACPI"'${debian_chroot:($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;31m\]`__git_ps1`\[\033[0;37m\]   \n$'
-fi
-
+PS1='\n'"$ACPI"'${debian_chroot:($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;31m\]`__git_ps1`\[\033[0;37m\]   \n$'
 unset ACPI
-
-#Capslock als Escape
-xmodmap ~/dotfiles/keymap &> /dev/null
-#Capslock als Escape in der Konsole
-#Ziemlicher Hack aber was solls...
-echo qvucmb1371 | sudo -S loadkeys ~/dotfiles/keymap_console &> /dev/null
 
 #vi mode in bash:
 set -o vi on
 
-alias whatsapp='whatsapp --token $(cat ~/pbAccToken)'
 
-#for setting up thefuck
-eval $(thefuck --alias)
-
-#damit googler w3m benutzt:
-export BROWSER=w3m
-
-if type zsh; then
-    exec zsh
-fi

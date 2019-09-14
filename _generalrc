@@ -1,0 +1,31 @@
+
+source ~/dotfiles/_aliases
+
+#for setting up thefuck
+eval $(thefuck --alias)
+
+#damit googler w3m benutzt:
+export BROWSER=w3m
+
+#Als Function, damit cd ohne Para ins Homeverzeichnis fuehrt.
+function cd {
+    if [ $# -eq '0' ]; then
+        pushd ~ > /dev/null 
+    else
+        pushd $1 > /dev/null
+    fi
+}
+
+#Localen /bin Ordner zum Path hinzufuegen
+export PATH="$HOME/bin:$PATH"
+#Python scipte in Path
+export PATH="$HOME/.local/bin:$PATH"
+
+#Vim als Standard:
+export EDITOR=vim
+
+#Capslock als Escape
+xmodmap ~/dotfiles/keymap &> /dev/null
+#Capslock als Escape in der Konsole
+#Ziemlicher Hack aber was solls...
+echo qvucmb1371 | sudo -S loadkeys ~/dotfiles/keymap_console &> /dev/null
