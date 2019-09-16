@@ -20,8 +20,10 @@ function cd {
 
 #Localen /bin Ordner zum Path hinzufuegen
 export PATH="$HOME/bin:$PATH"
-#Python scipte in Path
+#Python Scripte in Path
 export PATH="$HOME/.local/bin:$PATH"
+#Scripte fuer die Arbeit
+export PATH="/mtn/c/eigen/bin/:$PATH"
 
 #Vim als Standard:
 export EDITOR=vim

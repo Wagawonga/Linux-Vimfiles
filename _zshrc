@@ -50,7 +50,6 @@ bindkey '^x^e' edit-command-line
 #PROMPT='\n'"$ACPI"'${debian_chroot:($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;31m\]`__git_ps1`\[\033[0;37m\]   \n$'
 
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH="/mtn/c/eigen/bin/:$PATH"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey -v #Vi-Mode
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
