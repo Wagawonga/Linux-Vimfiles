@@ -127,3 +127,6 @@ Plugin 'https://github.com/xolox/vim-colorscheme-switcher.git'
 
 " bestes colorscheme
 Plugin 'https://github.com/joshdick/onedark.vim'
+
+" Printdialog. start mit <Leader>pd
+Plugin 'https://github.com/vim-scripts/Printer-Dialog'
