@@ -32,4 +32,4 @@ export EDITOR=vim
 xmodmap ~/dotfiles/keymap &> /dev/null
 #Capslock als Escape in der Konsole
 #Ziemlicher Hack aber was solls...
-echo qvucmb1371 | sudo -S loadkeys ~/dotfiles/keymap_console &> /dev/null
+sudo loadkeys ~/dotfiles/keymap_console &> /dev/null
