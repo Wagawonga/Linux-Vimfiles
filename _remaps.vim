@@ -44,4 +44,7 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 map [12~ <F2>
 map <F2> :w\|!clear; ~/bin/toPi.sh <CR>
 
+" um Konflikt mit mark Plugin zu behben
+nmap <Leader>mr <Plug>MarkRegex
+
 "------------------------------------------------------
