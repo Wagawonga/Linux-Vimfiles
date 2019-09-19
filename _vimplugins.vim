@@ -132,4 +132,6 @@ Plugin 'https://github.com/joshdick/onedark.vim'
 Plugin 'https://github.com/vim-scripts/Printer-Dialog'
 
 " Um Text mit regex unterschiedlich hervorzuheben unabh von Syntaxhighlight
+" (zweites Plug ist eine dependency)
 Plugin 'https://github.com/inkarkat/vim-mark.git'
+Plugin 'https://github.com/inkarkat/vim-ingo-library'
