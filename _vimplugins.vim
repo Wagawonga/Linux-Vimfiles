@@ -130,3 +130,6 @@ Plugin 'https://github.com/joshdick/onedark.vim'
 
 " Printdialog. start mit <Leader>pd
 Plugin 'https://github.com/vim-scripts/Printer-Dialog'
+
+" Um Text mit regex unterschiedlich hervorzuheben unabh von Syntaxhighlight
+Plugin 'https://github.com/inkarkat/vim-mark.git'
