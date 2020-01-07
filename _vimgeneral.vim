@@ -120,46 +120,48 @@ set number
 set runtimepath^=~/.vim/bundle/ctrlp.vim
    
 "Default 
-silent! colorscheme 0x7A69_dark
+silent! colorscheme onedark 
+highlight Normal guibg=black
+highlight Normal ctermbg=black
 "Wenn mehr Farben unterstützt werden:
-if ( has("gui_running") && has("win32") )
-    "gVim
-    silent! colorscheme onedark 
-    highlight Normal guibg=black
-elseif !match($TERM,"xterm-256color") 
-    "Termux
-    silent! colorscheme onedark 
-    highlight Normal ctermbg=black
-elseif !match($TERM,"screen-256color") 
-    "Termux
-    silent! colorscheme onedark 
-    "Anpassen des Highlight bei Visual select in cmder
-    hi Visual term=reverse cterm=reverse guibg=Grey
-    "Cursor richtig anzeigen:
-    "Da es Probleme bei der Anzeige in guake gab ist die
-    "Modifikation des Curseres wieder entfernt worden
-    "let &t_ti.="\e[1 q"
-    "let &t_SI.="\e[5 q"
-    "let &t_EI.="\e[1 q"
-    "let &t_te.="\e[0 q"
-elseif !match($TERM,"screen") 
-    "tmux in Termux
-    silent! colorscheme onedark 
-elseif !match($TERM,"xterm")  
-    "Linux with xWindow
-    silent! colorscheme onedark 
-    "black Background geht nicht!
-    "Breiter Cursor in vim
-    "Da es Probleme bei der Anzeige in guake gab ist die
-    "Modifikation des Curseres wieder entfernt worden
-    "let &t_ti.="\e[1 q"
-    "let &t_SI.="\e[5 q"
-    "let &t_EI.="\e[1 q"
-    "let &t_te.="\e[0 q"
-    "Kein Delay beim anzeigen des Cursors.
-    set ttimeoutlen=0
-    set timeoutlen=1000
-endif
+"if 0 "( has("gui_running") && has("win32") )
+    ""gVim
+    "silent! colorscheme onedark 
+    "highlight Normal guibg=black
+""elseif !match($TERM,"xterm-256color") 
+    ""Termux
+""    silent! colorscheme onedark 
+    "highlight Normal ctermbg=black
+"elseif !match($TERM,"screen-256color") 
+    ""Termux
+    "silent! colorscheme onedark 
+    ""Anpassen des Highlight bei Visual select in cmder
+    "hi Visual term=reverse cterm=reverse guibg=Grey
+    ""Cursor richtig anzeigen:
+    ""Da es Probleme bei der Anzeige in guake gab ist die
+    ""Modifikation des Curseres wieder entfernt worden
+    ""let &t_ti.="\e[1 q"
+    ""let &t_SI.="\e[5 q"
+    ""let &t_EI.="\e[1 q"
+    ""let &t_te.="\e[0 q"
+"elseif !match($TERM,"screen") 
+    ""tmux in Termux
+    "silent! colorscheme onedark 
+"elseif !match($TERM,"xterm")  
+    ""Linux with xWindow
+    "silent! colorscheme onedark 
+    ""black Background geht nicht!
+    ""Breiter Cursor in vim
+    ""Da es Probleme bei der Anzeige in guake gab ist die
+    ""Modifikation des Curseres wieder entfernt worden
+    ""let &t_ti.="\e[1 q"
+    ""let &t_SI.="\e[5 q"
+    ""let &t_EI.="\e[1 q"
+    ""let &t_te.="\e[0 q"
+    ""Kein Delay beim anzeigen des Cursors.
+    "set ttimeoutlen=0
+    "set timeoutlen=1000
+"endif
 
 " Syntastic setup
 let g:syntastic_javascript_checkers = ['jshint']
@@ -197,7 +199,7 @@ augroup END
 set mouse=a 
 
 " Bessere Keys fuer Easymotion:
-let g:EasyMotion_keys = '1234567890qwertzuiopüyxcvbnm,.-ghfjdkslaö'
+let g:EasyMotion_keys = '1234567890qwertzuiopüyxcvbnm,.-ghfjdksla'
 
 " damit Tabellen Markdown kompatibel sind:
 let g:table_mode_corner='|'

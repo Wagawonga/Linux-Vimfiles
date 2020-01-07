@@ -34,7 +34,10 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 map Y y$
 
 "remap fuer C
-map <F9> :w<CR>:!clear&&gcc % -o %< && ./%<<CR>
+" map <F9> :w<CR>:!clear&&gcc % -o %< && ./%<<CR>
+" Remap für Haskel
+" map <F9> :w<CR>:!%<CR>
+autocmd FileType haskell nnoremap <F9> :w<CR>:!%<CR>
 
 "Damit Ctrl-L auch Searchhighlight löscht
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

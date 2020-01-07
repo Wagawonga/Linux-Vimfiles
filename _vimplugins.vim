@@ -4,9 +4,6 @@ Plugin 'tpope/vim-surround'
 " dot Repeat for some Plugins
 Plugin 'tpope/vim-repeat'
 
-" Tabellenartige Anordnung für Einträge
-Plugin 'godlygeek/tabular'
-
 " Show git diff at side
 Plugin 'airblade/vim-gitgutter'
 
@@ -50,7 +47,9 @@ Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plugin 'nathanaelkane/vim-indent-guides'
 
 " Fuer mehr colorshemes
-Plugin 'flazz/vim-colorschemes'
+" Sorgte für conflikt mit vim-markdown. Header wurden nicht mehr korrekt
+" angezeigt
+" Plugin 'flazz/vim-colorschemes'
 
 " Tab-vervollstaendigung
 "Plugin 'ervandew/supertab'
@@ -67,7 +66,7 @@ Plugin 'jelera/vim-javascript-syntax'
 " yankstack:
 Plugin 'https://github.com/maxbrunsfeld/vim-yankstack.git'
 
-"Register anzeigen bei " und @
+" Register anzeigen bei " und @
 Plugin 'https://github.com/junegunn/vim-peekaboo.git'
 
 " Syntaxcheck
@@ -81,9 +80,6 @@ Plugin 'carakan/new-railscasts-theme'
 
 " Fuer die Anzeige von CSV-Dateien:
 Plugin 'https://github.com/chrisbra/csv.vim.git'
-
-" fuer Markdown Syntax:
-Plugin 'https://github.com/plasticboy/vim-markdown.git'
 
 " Hier Delphi Syntaxhighlight : 
 Plugin 'https://github.com/vim-scripts/Delphi-7-2010.git'
@@ -135,3 +131,16 @@ Plugin 'https://github.com/vim-scripts/Printer-Dialog'
 " (zweites Plug ist eine dependency)
 Plugin 'https://github.com/inkarkat/vim-mark.git'
 Plugin 'https://github.com/inkarkat/vim-ingo-library'
+
+" Haskell Syntaxhighlight
+Plugin 'https://github.com/neovimhaskell/haskell-vim'
+
+" Haskell Programmierhilfen. Unteranderen Links auf die Doku direkt aus vim
+Plugin 'https://github.com/lukerandall/haskellmode-vim'
+
+" Tabellenartige Anordnung für Einträge
+Plugin 'godlygeek/tabular'
+
+" fuer Markdown Syntax:
+" Hat Syntaxhiglighting kaputt gemacht. Liegt wohl am Colorsheme?
+ Plugin 'https://github.com/plasticboy/vim-markdown.git'
