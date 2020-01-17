@@ -182,7 +182,9 @@ set makeprg=gcc\ -o\ %<\ %
 " ; als Trennung fuer CSV
 let g:csv_delim=';'
 
-set clipboard=unnamed
+" unnamedplus sollte bei windows und Linux funktionieren (damit ist das "+"
+" Register anstelle des "*" Registers gemeint.
+set clipboard=unnamedplus
 set nofoldenable " Disable Folding when openening a file. Toggle with normalmode command zi
 
 " Case ignorieren
