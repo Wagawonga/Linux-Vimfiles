@@ -184,7 +184,7 @@ let g:csv_delim=';'
 
 " unnamedplus sollte bei windows und Linux funktionieren (damit ist das "+"
 " Register anstelle des "*" Registers gemeint.
-set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
 set nofoldenable " Disable Folding when openening a file. Toggle with normalmode command zi
 
 " Case ignorieren
