@@ -8,7 +8,6 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set backspace=indent,eol,start
-"set clipboard=unnamed
 
 set nowritebackup
 set nobackup
