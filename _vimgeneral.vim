@@ -120,8 +120,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
    
 "Default 
 silent! colorscheme onedark 
-highlight Normal guibg=black
-highlight Normal ctermbg=black
+"highlight Normal guibg=none
+highlight Normal ctermbg=none
 "Wenn mehr Farben unterstützt werden:
 "if 0 "( has("gui_running") && has("win32") )
     ""gVim
@@ -220,3 +220,10 @@ set so=7
 
 " Damit Fenster die gleiche Groesse bahalten
 set noequalalways
+
+" Damit brei wrapping gezeigt wird welche Zeilen Gewrapt sind. Mach dies mit ...
+set showbreak=>>>
+" Damit an Vernüftigen stellen der Zeilenumbruch vorgenommen wird
+set linebreak
+" Wrap immer bei 72 Zeilen. Funktioniert nicht gut!
+" autocmd VimResized * | set columns=72
